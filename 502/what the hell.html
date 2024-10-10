@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>502 Bad Gateway</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            color: #333;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            position: relative;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #ff8080;
+            text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0 #000, 6px 6px 0 #000;
+            transform: rotateX(20deg) rotateY(-20deg);
+            animation: anime3D 2s ease-in-out infinite alternate;
+        }
+
+        .error-code {
+            font-size: 10em;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ff8080;
+            position: relative;
+            text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0 #000, 6px 6px 0 #000;
+            transform: rotateX(20deg) rotateY(-20deg);
+            animation: anime3D 2s ease-in-out infinite alternate;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #555;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ff8080;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(255, 128, 128, 0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            animation: fadeIn 2.5s ease-in-out;
+            font-weight: bold;
+
+        }
+
+        a:hover {
+            background-color: #ff6666;
+            box-shadow: 0 10px 20px rgba(255, 128, 128, 0.5);
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes anime3D {
+            0% {
+                transform: rotateX(20deg) rotateY(-20deg);
+            }
+            100% {
+                transform: rotateX(20deg) rotateY(20deg);
+            }
+        }
+    </style>
+<input type="hidden" id="_w_simile" data-inspect-config="3"><script type="text/javascript" src="chrome-extension://odphnbhiddhdpoccbialllejaajemdio/scripts/inspector.js"></script></head>
+<body>
+    <div class="container">
+        <h1>what the hell!</h1>
+        <div class="error-code">502</div>
+        <p>回源失败，无法连接到服务器。</p>
+        <p>请稍后再试或联系网站管理员。</p>
+        <a href="mailto:lian@darklotus.cn">快去请Lian圣</a>
+
+    </div>
+
+
+</body></html>
